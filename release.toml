@@ -1,0 +1,4 @@
+pre-release-replacements = [
+  {file="README.md", search="cfg_aliases = \"[a-z0-9\\.-]+\"", replace="cfg_aliases = \"{{version}}\""} ,
+  {file="src/lib.rs", search="//! cfg_aliases = \"[a-z0-9\\.-]+\"", replace="//! cfg_aliases = {{version}}"} ,
+]
