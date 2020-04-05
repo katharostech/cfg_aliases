@@ -1,6 +1,6 @@
 [package]
 name = "cfg_aliases"
-version = "0.1.0-alpha.0"
+version = "0.1.0-alpha.1"
 license = "MIT"
 license-file = "LICENSE"
 authors = ["Zicklag <zicklag@katharostech.com>"]
