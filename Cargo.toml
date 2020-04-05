@@ -14,7 +14,7 @@ readme = "README.md"
 homepage = "https://github.com/katharostech/cfg_aliases"
 repository = "https://github.com/katharostech/cfg_aliases"
 
-exclude = ["modoc.config"]
+exclude = ["modoc.config", "release.toml"]
 
 [badges]
 maintenance = { status = "passively-maintained" }
