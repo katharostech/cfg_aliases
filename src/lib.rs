@@ -10,7 +10,7 @@
 //!
 //! ```toml
 //! [build-dependencies]
-//! cfg_aliases = "0.1.0-alpha.1"
+//! cfg_aliases = "0.1.0"
 //! ```
 //!
 //! **build.rs:**
