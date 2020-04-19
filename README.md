@@ -56,7 +56,7 @@ This greatly improves what would otherwise look like this without the aliases:
 #[cfg(target_arch = "wasm32")]
 println!("We're running in WASM");
 
-#[cfg(all(unix, feature = "surfman", not(target_arch = "22")))]
+#[cfg(all(unix, feature = "surfman", not(target_arch = "wasm32")))]
 {
     // Do stuff related to surfman
 }
