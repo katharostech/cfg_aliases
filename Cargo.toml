@@ -17,3 +17,6 @@ exclude = ["modoc.config", "release.toml"]
 
 [badges]
 maintenance = { status = "passively-maintained" }
+
+[lints.clippy]
+str_to_string = "deny"
