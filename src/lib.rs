@@ -201,7 +201,7 @@ macro_rules! cfg_aliases {
                 "CARGO_CFG_{}",
                 &stringify!($cfgname).to_uppercase().replace("-", "_")
             )
-        ).unwrap_or("".to_string()).split(",").find(|x| x == &$cfgvalue).is_some()
+        ).unwrap_or("".to_owned()).split(",").find(|x| x == &$cfgvalue).is_some()
     };
 
     // Emitting `any(clause1,clause2,...)`: convert to `$crate::cfg_aliases!(clause1) && $crate::cfg_aliases!(clause2) && ...`
