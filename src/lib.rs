@@ -365,6 +365,7 @@ macro_rules! cfg_aliases {
         }
 
         $(
+            println!("cargo:rustc-check-cfg=cfg({})", stringify!($alias));
             if $crate::cfg_aliases!(@parser $($config)*) {
                 println!("cargo:rustc-cfg={}", stringify!($alias));
             }
