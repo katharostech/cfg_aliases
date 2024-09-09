@@ -10,7 +10,7 @@ You use the the [`cfg_aliases!`] macro in your `build.rs` script to define alias
 
 ```toml
 [build-dependencies]
-cfg_aliases = "0.1.0"
+cfg_aliases = "0.2.1"
 ```
 
 **build.rs:**
