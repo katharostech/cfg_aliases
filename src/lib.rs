@@ -365,7 +365,9 @@ macro_rules! cfg_aliases {
         }
 
         $(
-            println!("cargo:rustc-check-cfg=cfg({})", stringify!($alias));
+            if $crate::rustc::is_min_version("1.77.0").unwrap_or(false) {
+                println!("cargo:rustc-check-cfg=cfg({})", stringify!($alias));
+            }
             if $crate::cfg_aliases!(@parser $($config)*) {
                 println!("cargo:rustc-cfg={}", stringify!($alias));
             }
@@ -377,3 +379,6 @@ macro_rules! cfg_aliases {
         $crate::cfg_aliases!(@with_dollar[$] $($tokens)*)
     }
 }
+
+#[doc(hidden)]
+pub use version_check as rustc;
