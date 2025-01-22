@@ -20,3 +20,6 @@ maintenance = { status = "passively-maintained" }
 
 [lints.clippy]
 str_to_string = "deny"
+
+[dependencies]
+version_check = "0.9.5"
