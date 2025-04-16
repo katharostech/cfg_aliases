@@ -10,7 +10,7 @@
 //!
 //! ```toml
 //! [build-dependencies]
-//! cfg_aliases = "0.1.0"
+//! cfg_aliases = "*" # Set to latest published version of cfg_aliases
 //! ```
 //!
 //! **build.rs:**
