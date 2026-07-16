@@ -265,7 +265,7 @@ macro_rules! cfg_aliases {
             {$($current)+}
         ] [
             $($rest)*
-        ]);
+        ])
     };
 
     // This rule comes next. It fires when the next un-parsed token is *not* a
@@ -284,7 +284,7 @@ macro_rules! cfg_aliases {
             )*
         ] [
             $($rest)*
-        ] $($current)* $tok);
+        ] $($current)* $tok)
     };
 
     // This rule fires when there are no more tokens to parse in this list. We
@@ -302,7 +302,7 @@ macro_rules! cfg_aliases {
                 {$($grouped)+}
             )*
             {$($current)+}
-        );
+        )
     };
 
 
